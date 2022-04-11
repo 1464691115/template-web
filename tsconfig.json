@@ -14,11 +14,14 @@
     "noImplicitReturns": true,
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
+    "noImplicitAny": false,
     "allowJs": true,
     "skipLibCheck": true,
     "experimentalDecorators": true,
     "strict": true,
     "paths": {
+      "@config/*": ["./config/*"],
+      "@public/*": ["./public/*"],
       "@/*": ["./src/*"],
       "@@/*": ["./src/.umi/*"]
     }
@@ -38,5 +41,6 @@
     "jest.config.js",
     "mock/*"
   ],
-  "exclude": ["node_modules", "build", "dist", "scripts", "src/.umi/*", "webpack", "jest"]
+  "exclude": ["node_modules", "build", "dist", "scripts", "src/.umi/*", "webpack", "jest"],
+  "typeRoots": ["./node_modules/@types/", "./typings/**/*"]
 }

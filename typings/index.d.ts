@@ -22,3 +22,17 @@ declare module 'bizcharts-plugin-slider';
 declare let ANT_DESIGN_PRO_ONLY_DO_NOT_USE_IN_YOUR_PRODUCTION: 'site' | undefined;
 
 declare const REACT_APP_ENV: 'test' | 'dev' | 'pre' | false;
+
+declare type GlobalComponentsPropsType = {
+    children?: any
+    if?: boolean | FALSE_TYPE
+}
+
+/** 异常类型 */
+declare type FALSE_TYPE = undefined | null | 0 | false | ''
+
+declare type ChgEvent = {
+    detail: {
+        value: any
+    }
+}

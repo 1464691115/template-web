@@ -1,12 +1,7 @@
-import { Settings as LayoutSettings } from '@ant-design/pro-layout';
-
-const Settings: LayoutSettings & {
-  pwa?: boolean;
-  logo?: string;
-} = {
+const Settings: defaultSettingsType = {
   navTheme: 'light',
   // 好看绿
-  primaryColor: '#61BFAD',
+  primaryColor: '#049568',
   layout: 'mix',
   contentWidth: 'Fluid',
   fixedHeader: false,
