@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "SenSWB",
+    "title": "SenSwb",
     "version": "1.0.0"
   },
   "servers": [

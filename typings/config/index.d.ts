@@ -1,10 +1,8 @@
-import type { Settings } from '@ant-design/pro-layout'
+import type { Settings } from '@ant-design/pro-layout';
 
-declare module '@config/defaultSettings' {
-    export type defaultSettingsType = Settings & {
-        pwa?: boolean;
-        logo?: string;
-    }
+declare module '@config/setting' {
+  export type defaultSettingsType = Settings & {
+    pwa?: boolean;
+    logo: string;
+  };
 }
-
-

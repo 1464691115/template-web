@@ -1,0 +1,39 @@
+{
+    // Place your SenSWB 工作区 snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+    // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+    // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+    // used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+    // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+    // Placeholders with the same ids are connected.
+    // Example:
+    "react admin components 页面模板": {
+        "scope": "javascript,typescript,Typescript,javascriptreact,typescriptreact",
+        "prefix": "ARC",
+        "body": [
+            "// @ts-ignore",
+            "import React, { useEffect } from 'react'",
+            "import classNames from 'classnames';",
+            "import styles from './index.less';\n",
+
+            "export interface $1Props extends GlobalComponentsPropsType {\n",
+            "};\n",
+
+            "/** $2 */",
+            "const $1: React.FC<$1Props> = (props) => {",
+
+            "\n\tuseEffect(() => {",
+
+            "\n\t\treturn () => {",
+            "\t\t}",
+            "\t}, [])",
+
+
+            "\n\n\treturn <div className={classNames({[props.className || '']: true})}>",
+            "\t</div>",
+            "}",
+
+            "\n export default $1",
+        ],
+        "description": "react admin 页面模板"
+    }
+}

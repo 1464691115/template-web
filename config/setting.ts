@@ -1,4 +1,4 @@
-const Settings: defaultSettingsType = {
+const setting: defaultSettingsType = {
   navTheme: 'light',
   // 好看绿
   primaryColor: '#049568',
@@ -7,10 +7,10 @@ const Settings: defaultSettingsType = {
   fixedHeader: false,
   fixSiderbar: true,
   colorWeak: false,
-  title: 'SenSWB',
+  title: 'SenSwb',
   pwa: false,
-  logo: '../public/logo.svg',
+  logo: 'http://localhost:8000/logo.svg',
   iconfontUrl: '',
 };
 
-export default Settings;
+export default setting;

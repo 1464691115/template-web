@@ -1,11 +1,10 @@
 // https://umijs.org/config/
 import { defineConfig } from 'umi';
 import { join } from 'path';
-import defaultSettings from './defaultSettings';
+import setting from './setting';
 import proxy from './proxy';
 import routes from './routes';
-import path from 'path'
-
+import path from 'path';
 
 const { REACT_APP_ENV } = process.env;
 export default defineConfig({
@@ -18,7 +17,7 @@ export default defineConfig({
     // https://umijs.org/zh-CN/plugins/plugin-layout
     locale: true,
     siderWidth: 208,
-    ...defaultSettings,
+    ...setting,
   },
   dynamicImport: {
     loading: '@ant-design/pro-layout/es/PageLoading',
@@ -38,8 +37,7 @@ export default defineConfig({
     // 只有设置为 variable， 才能使用 configProvide 动态设置主色调
     // https://ant.design/docs/react/customize-theme-variable-cn
     // 'root-entry-name': 'variable',
-    'primary-color': defaultSettings.primaryColor,
-
+    'primary-color': setting.primaryColor,
   },
   // esbuild is father build tools
   // https://umijs.org/plugins/plugin-esbuild
