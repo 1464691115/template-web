@@ -7,7 +7,7 @@ export default [
       { component: './404' },
     ],
   },
-  { path: '/welcome', name: '欢迎', icon: 'smile', component: './Welcome' },
+  { path: '/material', name: '我的项目', icon: 'inbox', component: './material/index' },
   {
     path: '/admin',
     name: '管理页',
@@ -20,6 +20,6 @@ export default [
     ],
   },
   { name: '查询表格', icon: 'table', path: '/list', component: './TableList' },
-  { path: '/', redirect: '/welcome' },
+  { path: '/', redirect: '/material' },
   { component: './404' },
 ];

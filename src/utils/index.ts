@@ -35,7 +35,7 @@ export function deleteAdd(text = '') {
 }
 
 /** number转换数组 */
-export function numberToArray(num: number = 0, starStr = '') {
+export function numberToArray(num: number = 0, starStr: string | number = '') {
     return new Array(num).fill(starStr)
 }
 
