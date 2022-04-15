@@ -1,5 +1,5 @@
 /** 用户实体 */
-export interface UserEntity {
+export interface UserEntity extends API.CurrentUser {
   username: string;
   password: string;
 }

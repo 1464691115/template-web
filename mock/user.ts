@@ -44,13 +44,13 @@ export default {
     res.send({
       success: true,
       data: {
-        name: 'Serati Ma',
-        avatar: 'https://gw.alipayobjects.com/zos/antfincdn/XAosXuNZyF/BiazfanxmamNRoxxVxka.png',
+        name: 'klee',
+        avatar: 'http://localhost:8000/images/7a05095166cd2757ae458a7c5aa0ddd.jpg',
         userid: '00000001',
         email: 'antdesign@alipay.com',
         signature: '海纳百川，有容乃大',
-        title: '交互专家',
-        group: '蚂蚁金服－某某某事业群－某某平台部－某某技术部－UED',
+        title: '爆破专家',
+        group: '蒙德－西风骑士团－火花骑士',
         tags: [
           {
             key: '0',

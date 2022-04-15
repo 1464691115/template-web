@@ -6,7 +6,7 @@ import { Alert, message, Tabs } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import type { loginParamsType, userLoginType } from 'typings/entity/user';
 import IconTitle from '@/layout/IconTitle';
-import { history, useModel } from 'umi';
+import { history, useModel, useSelector } from 'umi';
 import { login } from '@/services/ant-design-pro/api';
 
 interface Props extends GlobalComponentsPropsType {
@@ -29,7 +29,7 @@ const LoginMessage: React.FC<{
 export default function (props: Props) {
   const [userLoginState, setUserLoginState] = useState<Partial<API.LoginResult>>({});
   const [loginType, setLoginType] = useState<userLoginType>('login');
-  const { initialState, setInitialState } = useModel('@@initialState');
+  const { initialState, setInitialState } = useModel('@@initialState')
 
   const fetchUserInfo = async () => {
     const userInfo = await initialState?.fetchUserInfo?.();
