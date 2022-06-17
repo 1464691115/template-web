@@ -1,7 +1,6 @@
 // @ts-ignore
 import React, { useEffect, useState } from 'react'
 import classNames from 'classnames';
-import styles from './index.less';
 import { PageContainer } from '@ant-design/pro-layout';
 import { Button } from 'antd';
 import ProCard from '@ant-design/pro-card';
